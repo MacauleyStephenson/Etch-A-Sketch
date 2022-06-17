@@ -8,29 +8,28 @@ function makeRows(rows, cols) {
 		cell.innerText = (c + 1);
 		container.appendChild(cell).className = "grid-item";
 	};
+	hoverColor();
 };
 
+
+
+let randomColor = function () {
+	var letters = '0123456789ABCDEF';
+	var color = '#';
+	for (var i = 0; i < 6; i++) {
+		color += letters[Math.floor(Math.random() * 16)]
+	}
+	return color;
+}
+
+function hoverColor() {
+	let items = document.querySelectorAll('.grid-item');
+	items.forEach(item => {
+		item.addEventListener('mouseover', () => {
+			item.style.backgroundColor = `${randomColor()}`;
+		});
+	});
+}
+
+
 makeRows(16, 16);
-
-let test = document.getElementById("container");
-
-test.addEventListener("mouseenter", function (event) {
-	event.target.style.color = "purple";
-
-
-	setTimeout(function () {
-		event.target.style.color = "";
-	}, 500);
-}, false);
-
-// This handler will be executed every time the cursor
-// is moved over a different list item
-test.addEventListener("mouseover", function (event) {
-	// highlight the mouseover target
-	event.target.style.color = "orange";
-
-	// reset the color after a short delay
-	setTimeout(function () {
-		event.target.style.color = "";
-	}, 500);
-}, false);

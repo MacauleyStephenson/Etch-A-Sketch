@@ -8,10 +8,17 @@
 	grid-gap: 1em;
 	grid-template-rows: repeat(var(--grid-rows), 1fr);
 	grid-template-columns: repeat(var(--grid-cols), 1fr);
+	border: 3px solid black;
+	padding: 1rem;
 }
+
+#container:hover {
+	box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
+  }
+
 
 .grid-item{
 	padding: 1em;
-	border: 1px solid ;
+	border: 1px solid #ddd;
 	text-align: center;
 }
