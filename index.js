@@ -1,14 +1,16 @@
+const box = document.querySelector(".box");
 const container = document.getElementById("container");
 
+
 function makeRows(rows, cols) {
-	container.style.setProperty('--grid-rows', rows);
-	container.style.setProperty('--grid-cols', cols);
-	for (c = 0; c < (rows * cols); c++) {
+	for (r = 0; r < rows; r++) {
 		let cell = document.createElement("div");
-		cell.innerText = (c + 1);
-		container.appendChild(cell).className = "grid-item";
-	};
-	hoverColor();
+		box.appendChild(row).classNam = "grid-row";
+		for (c = 0; c < cols; c++) {
+			let coloumn = document.createElement("div");
+			cell.appendChild(coloumn).className = "cell";
+		};
+	}
 };
 
 
@@ -30,6 +32,8 @@ function hoverColor() {
 		});
 	});
 }
+
+
 
 
 makeRows(16, 16);

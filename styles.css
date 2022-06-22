@@ -13,6 +13,14 @@
 	padding: 1rem;
 }
 
+.box{
+	display: flex;
+	border: 15px solid rgb(95, 93, 93);
+	height: 600px;
+	width: 600px;
+	margin: 40px;
+}
+
 #container:hover {
 	box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 5px 5px rgba(0,0,0,0.23);
   }
