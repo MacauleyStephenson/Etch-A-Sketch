@@ -6,19 +6,11 @@
 /* grid */
 #container{
 	display: grid;
-	grid-gap: 1em;
-	grid-template-rows: repeat(var(--grid-rows), 1fr);
-	grid-template-columns: repeat(var(--grid-cols), 1fr);
+	grid-gap: 0em;
+	grid-template-rows: repeat(var(--grid-rows), 0fr);
+	grid-template-columns: repeat(var(--grid-cols), 0fr);
 	border: 3px solid black;
 	padding: 1rem;
-}
-
-.box{
-	display: flex;
-	border: 15px solid rgb(95, 93, 93);
-	height: 600px;
-	width: 600px;
-	margin: 40px;
 }
 
 #container:hover {
