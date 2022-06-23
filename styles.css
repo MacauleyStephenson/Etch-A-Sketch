@@ -3,13 +3,24 @@
 	--grid-rows: 1;
 }
 
+body {
+	background-color: rgba(19, 1, 43, 0.171);
+	font-family: Roboto, sans-serif;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+  }
+
+
 /* grid */
 #container{
-	display: grid;
-	grid-gap: 0em;
-	grid-template-rows: repeat(var(--grid-rows), 0fr);
-	grid-template-columns: repeat(var(--grid-cols), 0fr);
-	padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 30px;
+  padding: 10px;
 }
 
 #container:hover {
