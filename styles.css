@@ -9,7 +9,6 @@
 	grid-gap: 0em;
 	grid-template-rows: repeat(var(--grid-rows), 0fr);
 	grid-template-columns: repeat(var(--grid-cols), 0fr);
-	border: 3px solid black;
 	padding: 1rem;
 }
 
@@ -24,23 +23,13 @@
 	text-align: center;
 }
 
-#updateBtn {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 15px;
-    background-color: lightcoral;
-    border: none;
-    border-radius: 25px;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-    transition: all 0.3s;
-}
-
-#updateBtn:active {
-    box-shadow: 3px 2px 10px 1px rgb(255, 101, 101);
-    transform: scale(1.1);
-}
+.grid-box {
+	display: flex;
+	border: 15px solid rgb(95, 93, 93);
+	height: 600px;
+	width: 600px;
+	margin: 40px;
+  }
 
 /* Text and github styling*/
 
@@ -61,4 +50,25 @@
 
 .active {
     background-color: red !important;
+}
+
+/* Button styling */
+
+button {
+	min-height: 35px;
+	min-width: 160px;
+	background-color: #d3d3d3;
+	border-color: #d3d3d3;
+  }
+
+  button:hover {
+	background-color: #9e9898be;
+  }
+
+  button,
+label,
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: 15px;
 }
